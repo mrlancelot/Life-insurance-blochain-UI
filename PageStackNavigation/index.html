@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Blueprint: Page Stack Navigation</title>
+	<meta name="description" content="Blueprint: A basic template for a page stack navigation effect" />
+	<meta name="keywords" content="blueprint, template, html, css, page stack, 3d, perspective, navigation, menu" />
+	<meta name="author" content="Codrops" />
+	<link rel="shortcut icon" href="favicon.ico">
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="css/demo.css" />
+	<link rel="stylesheet" type="text/css" href="css/component.css" />
+	<script src="js/modernizr-custom.js"></script>
+</head>
+
+<body>
+    <div id="splash" onclick="ab()">
+    <img style="position: absolute; left:15%; top: 15%;" class="poster" src="images/123.gif" alt="img06" />
+    </div>
+    <script>
+        function ab(){
+            document.getElementById("splash").style.display="none";
+            document.getElementById("maindiv").style.display="block";
+        }
+    
+    
+    </script>
+    
+    <div id="maindiv" >
+	<!-- navigation -->
+	<nav class="pages-nav">
+		<div class="pages-nav__item"><a class="link link--page" href="#page-home">Customer Portal</a></div>
+		<div class="pages-nav__item"><a class="link link--page" href="#page-docu">Claim Self Service</a></div>
+		<div class="pages-nav__item"><a class="link link--page" href="#page-manuals">Claim Processing</a></div>
+		<div class="pages-nav__item"><a class="link link--page" href="#page-software">Contract Management</a></div>
+		<div class="pages-nav__item"><a class="link link--page" href="#page-custom">Police/Funeral Home &amp; Settings</a></div>
+		<div class="pages-nav__item"><a class="link link--page" href="#page-training">Medical Hospital</a></div>  
+		
+	</nav>
+	
+	<!-- pages stack -->
+	<div class="pages-stack">
+		<!-- page -->
+		<div class="page" id="page-home">
+			<!-- Blueprint header -->
+			<header class="bp-header cf">
+				<h1 class="bp-header__title">BlockchainSurance</h1>
+				
+			</header>
+            
+            
+            <span id="btn1" class='pulse-button'><a href="../GridGallery/index.html">Proceed</a></span>
+               
+            
+            
+			<img class="poster" src="images/3.gif" alt="img01" />
+		</div>
+		<!-- /page -->
+		<div class="page" id="page-docu">
+			<header class="bp-header cf">
+				<h1 class="bp-header__title">Claim Self-Service</h1>
+				
+			</header>
+            <span class='pulse-button'><a href="http://localhost:3000/insurance/self-service">Proceed</a></span>
+            
+			<img style="height: 40%; width: 35%" class="poster" src="images/6.gif" alt="img06" />
+		</div>
+		<div class="page" id="page-manuals">
+			<header class="bp-header cf">
+				<h1 class="bp-header__title">Claim Processing</h1>
+				
+			</header>
+            <span class='pulse-button'><a href="http://localhost:3000/insurance/claim-processing">Proceed</a></span>
+			<img class="poster" src="images/4.gif" alt="img02" />
+		</div>
+		<div class="page" id="page-software">
+			<header class="bp-header cf">
+				<h1 class="bp-header__title">Contract Management</h1>
+				
+			</header>
+            
+            <span class='pulse-button'><a href="http://localhost:3000/insurance/contract-management">Proceed</a></span>
+			<img style="height: 40%; width: 35%" class="poster" src="images/8.gif" alt="img03" />
+		</div>
+		<div class="page" id="page-custom">
+			<header class="bp-header cf">
+				<h1 class="bp-header__title">Police/Funeral Homes</h1>
+				
+			</header>
+           <span class='pulse-button'><a href="http://localhost:3000/police">Proceed</a></span> 
+			<img class="poster" src="images/7.gif" alt="img04" />
+		</div>
+		<div class="page" id="page-training">
+			<header class="bp-header cf">
+				<h1 class="bp-header__title">Medical Hospital</h1>
+				
+			</header>
+           <span class='pulse-button'><a href="http://localhost:3000/repair-shop">Proceed</a></span>  
+			<img class="poster" src="images/1.gif" alt="img05" />
+		</div>
+		
+	</div>
+        
+	<!-- /pages-stack -->
+	<button class="menu-button"><span>Menu</span></button>
+	<script src="js/classie.js"></script>
+	<script src="js/main.js"></script>
+        </div>
+</body>
+
+</html>

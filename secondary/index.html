@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Button Hover States</title>
+  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+
+  <link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Lato:300'>
+
+      <link rel="stylesheet" href="css/style.css">
+<script>
+    
+    function a(){
+        document.getElementById("one").style.display="none";
+        document.getElementById("two").style.display="block";
+        
+    }
+    
+    function b(){
+        document.getElementById("two").style.display="none";
+        document.getElementById("three").style.display="block";
+        
+    }
+    
+    function c()
+    {
+        if(document.getElementById("otp")=="123456789012")
+        {
+            location.href="../FullNext/index.html";
+        }
+        else
+        {
+            location.href="../FullNext2/index.html";
+        }
+    }
+    </script>
+  
+</head>
+
+<body>
+
+  <div class="container">
+  <div id="one">
+        <h1>Do you want to autofill?</h1>
+  <div class="button" onclick="a()"> Yes</div>
+  <div class="button"><a href="../FullscreenForm/index.html">No</a></div>
+
+      </div>
+      
+ <div id="two">
+        <h1>What is your Aadhaar Number ?</h1>
+     <input  id="otp" class="button" type="text" placeholder="12 digit Aadhaar number">
+  <div class="button" onclick="b()"> Next</div>
+  
+
+      </div>
+      
+      <div id="three">
+        <h1 style="text-align: center">       OTP</h1>
+     <input class="button" type="text" placeholder="4 digit OTP" >
+     
+  <div class="button" onclick="c()">Next</div>
+  
+
+      </div>
+    
+
+    
+    </div>
+  
+  
+
+</body>
+
+</html>

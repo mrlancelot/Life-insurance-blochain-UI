@@ -1,0 +1,30 @@
+#Start{
+    position: absolute;
+    top:35%;
+    left: 25%;
+    display: block;
+}
+#Second{
+    position: absolute;
+    top:25%;
+    left: 25%;
+    display: none;
+}
+#one{
+    position: absolute;
+    top:25%;
+    left: 0%;
+    display: block;
+}
+#one1{
+    position: absolute;
+    top:25%;
+    left: 290%;
+    display: block;
+}
+#two{
+    position: absolute;
+    top:25%;
+    left: 25%;
+
+}
